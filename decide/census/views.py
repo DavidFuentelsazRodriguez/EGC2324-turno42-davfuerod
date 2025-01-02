@@ -48,4 +48,4 @@ class CensusDetail(generics.RetrieveDestroyAPIView):
             Census.objects.get(voting_id=voting_id, voter_id=voter)
         except ObjectDoesNotExist:
             return Response('Invalid voter', status=ST_401)
-        return Response('Valid voter')
+        return Response('Valid voter.')
